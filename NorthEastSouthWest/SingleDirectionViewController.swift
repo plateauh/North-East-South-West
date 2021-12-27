@@ -9,12 +9,12 @@ import UIKit
 
 class SingleDirectionViewController: UIViewController {
 
-    @IBOutlet weak var directionLabel: UILabel!
+    @IBOutlet weak var directionButton: UIButton!
     var direction: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        directionLabel.text = direction
+        directionButton.setTitle(direction, for: .normal)
     }
 
 }

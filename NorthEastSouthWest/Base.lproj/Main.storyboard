@@ -17,7 +17,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jMI-Ce-voW">
-                                <rect key="frame" x="170" y="88" width="74.5" height="38"/>
+                                <rect key="frame" x="157" y="88" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="hAc-y4-Wks"/>
+                                    <constraint firstAttribute="height" constant="100" id="tyN-qZ-FGY"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="North">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
@@ -25,13 +29,13 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="directionButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zw8-oC-ddE"/>
-                                    <segue destination="gpR-OT-PPW" kind="presentation" id="PtG-8U-24H"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9i6-qV-Dpl">
-                                <rect key="frame" x="291" y="451" width="103" height="38"/>
+                                <rect key="frame" x="306" y="398" width="100" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="103" id="yYT-n1-2c9"/>
+                                    <constraint firstAttribute="height" constant="100" id="FMY-vz-NTc"/>
+                                    <constraint firstAttribute="width" constant="100" id="YTE-zr-ScQ"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="East">
@@ -40,13 +44,13 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="directionButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ce6-ac-U5L"/>
-                                    <segue destination="gpR-OT-PPW" kind="presentation" id="NfP-a7-M9U"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1JS-v8-gfQ">
-                                <rect key="frame" x="20" y="451" width="107" height="38"/>
+                                <rect key="frame" x="8" y="398" width="100" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="107" id="G13-5d-dRR"/>
+                                    <constraint firstAttribute="height" constant="100" id="2a8-Vi-CbL"/>
+                                    <constraint firstAttribute="width" constant="100" id="WQf-9m-JOY"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="West">
@@ -55,11 +59,14 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="directionButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Oj-W4-0SB"/>
-                                    <segue destination="gpR-OT-PPW" kind="presentation" id="WhH-RN-jg9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTj-vx-K2D">
-                                <rect key="frame" x="170" y="824" width="76" height="38"/>
+                                <rect key="frame" x="157" y="762" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="OMS-uq-lKJ"/>
+                                    <constraint firstAttribute="width" constant="100" id="nY7-Xs-9Fc"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="South">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
@@ -67,30 +74,30 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="directionButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LOY-Yl-ehf"/>
-                                    <segue destination="gpR-OT-PPW" kind="presentation" id="YFG-5k-hr7"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jTj-vx-K2D" secondAttribute="bottom" id="EZ1-zK-T7D"/>
-                            <constraint firstItem="9i6-qV-Dpl" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="G1D-AR-HyC"/>
-                            <constraint firstItem="jMI-Ce-voW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="HJ9-BY-CCA"/>
-                            <constraint firstItem="1JS-v8-gfQ" firstAttribute="baseline" secondItem="9i6-qV-Dpl" secondAttribute="baseline" id="Tje-Br-yet"/>
-                            <constraint firstItem="1JS-v8-gfQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="363" id="avd-ZX-beW"/>
-                            <constraint firstItem="jMI-Ce-voW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="170" id="dRU-Y4-VDl"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jMI-Ce-voW" secondAttribute="trailing" constant="169.5" id="emv-tn-dP1"/>
-                            <constraint firstItem="1JS-v8-gfQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="nqp-j2-R9J"/>
-                            <constraint firstItem="jTj-vx-K2D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="170" id="qDB-pn-PBA"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jTj-vx-K2D" secondAttribute="trailing" constant="168" id="qu7-9O-hiS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9i6-qV-Dpl" secondAttribute="trailing" constant="8" id="4XG-aO-tYE"/>
+                            <constraint firstItem="jMI-Ce-voW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NlE-en-WGj"/>
+                            <constraint firstItem="jTj-vx-K2D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RNP-Yd-GEY"/>
+                            <constraint firstItem="1JS-v8-gfQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kI3-hj-yHY"/>
+                            <constraint firstItem="1JS-v8-gfQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="m6i-aL-AfP"/>
+                            <constraint firstItem="jMI-Ce-voW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="uhz-4n-fbl"/>
+                            <constraint firstItem="9i6-qV-Dpl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uuJ-Sl-9eU"/>
+                            <constraint firstItem="jTj-vx-K2D" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="yNr-zk-L2R"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ccn-R7-Pwl"/>
+                    <connections>
+                        <segue destination="gpR-OT-PPW" kind="presentation" identifier="singleDirectionSegue" id="24F-zr-QJW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="928.98550724637687" y="97.767857142857139"/>
+            <point key="canvasLocation" x="958" y="98"/>
         </scene>
         <!--Single Direction View Controller-->
         <scene sceneID="lLY-5L-BLQ">
@@ -100,24 +107,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGE-a8-Ya3">
-                                <rect key="frame" x="163.5" y="399" width="87" height="44.5"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
-                                <color key="textColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pSU-vA-ONS">
+                                <rect key="frame" x="107" y="346" width="200" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="2kk-dw-UJD"/>
+                                    <constraint firstAttribute="width" constant="200" id="LsU-BF-aw9"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <color key="baseBackgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="C5H-gP-1GS"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
                         <constraints>
-                            <constraint firstItem="aGE-a8-Ya3" firstAttribute="centerX" secondItem="R8w-N7-Wz0" secondAttribute="centerX" id="7c1-Du-e4K"/>
-                            <constraint firstItem="aGE-a8-Ya3" firstAttribute="centerY" secondItem="R8w-N7-Wz0" secondAttribute="centerY" id="Zau-0I-S4Y"/>
+                            <constraint firstItem="pSU-vA-ONS" firstAttribute="centerX" secondItem="R8w-N7-Wz0" secondAttribute="centerX" id="PBO-2W-k1Q"/>
+                            <constraint firstItem="pSU-vA-ONS" firstAttribute="centerY" secondItem="R8w-N7-Wz0" secondAttribute="centerY" id="y0V-49-y8k"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="K1W-RY-w5i"/>
                     <connections>
-                        <outlet property="directionLabel" destination="aGE-a8-Ya3" id="Vdy-Xz-qOd"/>
+                        <outlet property="directionButton" destination="pSU-vA-ONS" id="TSp-M2-rjT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0cD-gY-H4A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -143,9 +154,6 @@
             <point key="canvasLocation" x="18.840579710144929" y="97.767857142857139"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="NfP-a7-M9U"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemTealColor">
             <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
