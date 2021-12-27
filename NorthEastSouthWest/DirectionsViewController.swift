@@ -25,5 +25,8 @@ class DirectionsViewController: UIViewController {
         destination.direction = direction
     }
 
+    @IBAction func unwinding(_ segue: UIStoryboardSegue) {
+        
+    }
 }
 
